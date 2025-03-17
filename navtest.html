@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proper Naviagation Bar</title>
+    <style>
+        * { font-family: sans-serif;}
+
+        nav {
+            background: green;
+            width: 100%;
+            padding: 10px;
+            font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+            top: 0%;
+            left: 0%;
+            position: fixed;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            font-weight: bold;
+            color: greenyellow;
+            background: #333;
+            padding: 10px;
+            text-decoration: none;
+            
+        }
+        nav a:hover {background-color: #555;}  
+        main {padding-top: 3.5rem;}      
+        body {background: lightblue; color: #111}
+        footer {text-align: center;}
+
+        @media (max-width: 768px) {
+            body {background-color: darkslategray; color: white;}
+            main {padding-top: 30vh}
+            nav a {border: 1px solid white;
+                   text-align: center}
+        }
+
+        @media (max-width: 480px) {
+            body {background: linear-gradient(90deg, darkblue, darkslateblue);}
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#top">Top</a>
+        <a href="#bot">Bottom</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </nav>
+
+    <main id="top">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper felis et lorem auctor malesuada. Nulla vitae varius odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur ac quam tellus. Curabitur porttitor leo libero, et egestas nulla finibus id. Duis ut tellus sit amet nisi mollis tristique. Ut vitae nisl non velit rutrum iaculis. Nulla facilisi. Sed vitae faucibus mi. Morbi sit amet tellus eget nibh elementum rutrum ut sed lectus. Etiam fringilla auctor magna vehicula tristique. Nam vel blandit nisi. Nulla ultricies maximus maximus. Integer sollicitudin neque vel augue bibendum, quis interdum lectus sodales. Sed a sem eleifend, fringilla orci ac, elementum risus. Quisque malesuada pharetra arcu, a placerat magna sodales ac.
+Suspendisse iaculis dignissim eros non finibus. Vestibulum at augue elit. Phasellus non odio vulputate, facilisis ex dictum, blandit velit. Praesent id malesuada lectus. Pellentesque pulvinar non est et tempus. In et fringilla nisi, vitae fermentum libero. Morbi non orci dapibus, cursus tellus et, pellentesque dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut non odio ac lectus ultrices molestie sed at odio. Nulla bibendum dignissim odio vitae finibus.
+Nulla commodo tortor quis blandit imperdiet. Maecenas non vehicula lectus. Integer lacinia egestas orci, id interdum libero tristique finibus. Sed faucibus semper erat, in pellentesque nulla mattis non. Suspendisse convallis nibh quam, ac sodales turpis convallis vitae. Aenean ut aliquet mauris. Nullam scelerisque vulputate risus, non aliquam ante tristique in. Aenean quis laoreet dolor. Cras placerat turpis id nisi tempor, eu tincidunt nisl ultricies.
+Suspendisse sed nibh et metus elementum consectetur vel non mi. Vivamus egestas efficitur elit, ut feugiat metus feugiat in. Curabitur sit amet tellus ante. Maecenas iaculis sollicitudin libero, sit amet fringilla diam pellentesque at. Quisque consequat non felis tempor dignissim. Phasellus lectus neque, tincidunt eu fermentum quis, suscipit in nisl. Aliquam erat volutpat. Pellentesque posuere suscipit sem viverra imperdiet. Etiam egestas urna tellus, vitae elementum eros fringilla eu. Suspendisse aliquam tincidunt suscipit. Mauris tellus velit, vehicula in ex a, interdum iaculis ex. Suspendisse odio ante, scelerisque vel finibus quis, consectetur eu mauris. Etiam id purus a tellus vestibulum euismod et non erat. Curabitur tincidunt condimentum vehicula. Praesent eget tellus erat.
+Sed eget dui nec nisi egestas pharetra. Morbi eget tincidunt dui. Nulla blandit est at purus rhoncus, quis tincidunt libero cursus. Nullam id massa eros. Donec sit amet faucibus lectus. Ut nec tortor sodales, sollicitudin enim et, dictum dui. Aliquam et lorem laoreet, ultrices enim quis, facilisis lorem. Curabitur in vehicula justo, sit amet molestie turpis. Donec aliquet lacus elit, vitae congue purus eleifend nec. In sem nibh, faucibus id elit id, porttitor sodales elit. Morbi porttitor nulla quis pulvinar lacinia. Maecenas non neque luctus leo blandit semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+        </p>
+    </main>
+
+    <footer>
+        <b>This is the bottom of the page</b>
+    </footer>
+</body>
+</html>
