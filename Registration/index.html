@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <form action="#" method="post" id="contactform"
+    style="text-align:center;" onsubmit="alert('Not Implemented yet, Sorry!')">
+<fieldset>
+    <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+
+    <input type="text" name="lastname" id="lastname" placeholder="Last Name" required> <br/> <br/>
+    
+    <label for="myemail">Email: <span class="rqd">*</span></label><br/>
+    <input type="email" name="myemail" id="myemail" required> <br/> <br/>
+
+    <label for="subject">Subject: <span class="rqd">*</span></label><br/>
+    <input type="text" name="subject" id="subject"
+            placeholder="CS 101"  required> <br/> <br/>
+
+    <textarea name="tbody" id="tbody" placeholder="Enter Message..."
+    required></textarea> <br/> <br/>
+
+    <label for="priority">Priority: <span class="rqd">*</span></label><br/>
+    <select name="priority" id="priority" required>
+        <option disabled selected value>-- Select an Option --</option>
+        <option value="low">Low</option>
+        <option value="med">Medium</option>
+        <option value="high">High</option>
+        <option value="crit">Critical</option>
+    </select> <br/> <br/>
+
+    <label for="attach">Attachments: </label> <br/>
+    <input type="file" name="attach" id="attach" multiple> <br/> <br/>
+
+    <label for="flwup">Do you want a follow-up email? <span class="rqd">*</span></label> <br/>
+    <input type="radio" name="flwup" id="flwupy" value="yes">
+    <label for="flwup" class="flwlbl">Yes</label>
+    <input type="radio" name="flwup" id="flwupn" value="no">
+    <label for="flwup" class="flwlbl">No</label>    <br/> <br/>
+
+    <input type="hidden" id="humansonly" name="humansOnly">
+
+    <!-- <input type="submit" value="Submit" id="sbutton"> -->
+     <button>Submit</button>
+</fieldset>
+</form>
+</body>
+</html>
