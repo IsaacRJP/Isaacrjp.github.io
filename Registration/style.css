@@ -8,3 +8,7 @@ body {
     align-items: center;
     height: 100vh;
 }
+
+#myemail, #myemail2, #password {width: 95%;}
+
+
