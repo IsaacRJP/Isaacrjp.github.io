@@ -11,4 +11,25 @@ body {
 
 #myemail, #myemail2, #password {width: 95%;}
 
+.birthdayreason {
+    justify-content: space-between; 
+    max-width: 200px;
+    font-size: 13px;
+    padding: 10px
+    ;}
 
+* {border-radius: 4px;}
+fieldset {border: solid;}
+
+.agreement {
+    font-size: smaller;
+    text-decoration: none;
+}
+
+a {text-decoration: none;}
+
+.formbottom {
+    justify-content: left !important;
+    text-align: left;
+
+}
