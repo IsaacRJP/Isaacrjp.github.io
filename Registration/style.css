@@ -1,12 +1,13 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #f7f7f7;
     margin: 0;
     padding: 0;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+
 }
 
 #myemail, #myemail2, #password {width: 95%;}
@@ -15,10 +16,15 @@ body {
     justify-content: space-between; 
     max-width: 200px;
     font-size: 13px;
-    padding: 10px
+    padding: 10px;
+    margin:initial;
+    display:flex
+    
     ;}
 
-* {border-radius: 4px;}
+* {border-radius: 4px;
+   padding: 4px;
+    border-color: #80757533;}
 fieldset {border: solid;}
 
 .agreement {
@@ -33,3 +39,20 @@ a {text-decoration: none;}
     text-align: left;
 
 }
+
+.signup {
+    background:  #659d50;    ;
+    color:white;
+    font-size: larger;
+    width: 40%;
+    
+}
+
+form {background-color: #edf0f5;}
+
+.formtop {text-align: left;}
+
+.signup:hover{
+    background-color: green;
+}
+
