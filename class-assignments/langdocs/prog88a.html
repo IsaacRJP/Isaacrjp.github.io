@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog88a</title>
+</head>
+<body>
+    <input type="number" id="num1" min="1" max="13">
+    <input type="number" id="num2" min="2" max="20">
+
+    <button onclick="Calc()">Calculate</button>
+    <p id="output"></p>
+
+    <script>
+        function Calc() {
+            let n1 = Number(document.getElementById("num1").value)
+            let n2 = Number(document.getElementById("num2").value)
+        
+            let sum = n1+n2;
+            let dif = n1-n2;
+            let pro = n1*n2;
+            let avg = (n1+n+2)/2;
+            let abs = Math.abs(dif);
+            let max = 0;
+            let min = 0;
+
+            if (num1 >= num2) {
+                max = num1;
+                min = num2;
+            }
+            if (num1 <= num2) {
+                max = num2;
+                min = num1;
+            }
+
+            // if (someCondition= True) { run some code}
+
+            let p = document.getElementById('output');
+            p.innerHTML = "";
+            p.innerHTML += "Sum:" + sum + "<br>"
+            p.innerHTML += "Difference:" + Dif + "<br>"
+            p.innerHTML += "Product" + pro + "<br>"
+            p.innerHTML += "Average:" + avg + "<br>"
+            p.innerHTML += "Absoloute Difference:" + abs + "<br>"
+            p.innerHTML += "Max:" + max + "<br>"
+            p.innerHTML += "Min:" + min + "<br>"
+        }
+     </script>
+
+</body>
+</html>
