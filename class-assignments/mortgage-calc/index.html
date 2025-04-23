@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <label for="Principle">Principle:</label>
+            <input type="number" id="Principle" required>
+<br>
+            <label for="irate">Interest Rate:</label>
+            <input type="number" id="irate" required>
+<br>
+            <label for="year">Number of Years:</label>
+            <input type="number" id="year" required>
+<br>
+            <label for="monthpayment">Monthly Payment;</label>
+            <input type="number" id="monthpayment" required>
+<br>
+            <button onclick="Calc()">Calculate</button>
+            <button onclick="Reset()">Reset</button>
+<br>
+        </fieldset>
+    </form>
+    <p id="out"></p>
+</body>
+</html>
