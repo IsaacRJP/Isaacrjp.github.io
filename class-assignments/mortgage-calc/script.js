@@ -11,5 +11,13 @@ function Calc() {
     let part2 = m * ((Math.pow(base, exponent) - 1) / (r / n));
     let B = part1 - part2;
   
-    document.getElementById("out").innerHTML = B.toFixed(2);
+    document.getElementById("out").innerHTML = String(B.toFixed(2));
   }
+
+function Reset() {
+    document.getElementById("principle").value = 0;
+    document.getElementById("irate").value = 0;
+    document.getElementById("year").value = 0;
+    document.getElementById("monthpayment").value = 0;
+    document.getElementById("out").innerHTML = "0.00";
+}
