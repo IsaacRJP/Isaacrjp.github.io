@@ -1,14 +1,170 @@
+* {
+  user-select: none;
+  -webkit-user-select: none; /* For Safari */
+  -ms-user-select: none;     /* For IE/Edge */
+}
+
 .profile {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 20px;
   justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .profile img {
   border-radius: 100%;
-  border: 5px solid #000;
+  border: 5px solid #2f2515;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-size: cover;
   background-attachment: fixed;
+  width:19%;
+  height:19%;
 }
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: #2f2515;
+  display: flex;
+  justify-content: center;   /* Center navbar items horizontally */
+  align-items: center;       /* Center navbar items vertically */
+  box-shadow: 0 8px 16px rgba(47, 37, 21, 0.5);
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow:hidden;
+}
+
+body {
+  background-image: url("./mountain.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  transition: box-shadow 0.3s, color 0.3s, text-shadow 0.3s;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 100%;
+  height: 3px;
+  background: #ffd700;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s cubic-bezier(0.77,0,0.18,1), box-shadow 0.35s;
+  border-radius: 2px;
+  z-index: 1;
+  box-shadow: 0 0 0px #ffd700;
+}
+
+.navbar a.active::after,
+.navbar a.home-active::after {
+  transform: scaleX(1);
+  box-shadow: 0 0 8px #ffd700, 0 0 16px #ffd70088;
+  animation: underline-glow 1s ease-in-out;
+}
+
+@keyframes underline-glow {
+  0% {
+    box-shadow: 0 0 0px #ffd700;
+  }
+  50% {
+    box-shadow: 0 0 16px #ffd700, 0 0 32px #ffd70088;
+  }
+  100% {
+    box-shadow: 0 0 8px #ffd700, 0 0 16px #ffd70088;
+  }
+}
+
+.navbar a:not(.active):not(.home-active)::after {
+  transform-origin: right;
+}
+
+/* Highlight the home icon when on the home page */
+.navbar a.home-active {
+  box-shadow: 0 0 10px #ffd700, 0 0 20px #fff;
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  color: #ffd700;
+}
+.profile h3 {
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s;
+  cursor: pointer;
+}
+
+@keyframes wiggle {
+  0% { transform: scale(1) rotate(0deg);}
+  20% { transform: scale(1.1) rotate(-3deg);}
+  40% { transform: scale(1.05) rotate(3deg);}
+  60% { transform: scale(1.1) rotate(-3deg);}
+  80% { transform: scale(1.05) rotate(3deg);}
+  100% { transform: scale(1) rotate(0deg);}
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  15% { transform: translateX(-5px); }
+  30% { transform: translateX(5px); }
+  45% { transform: translateX(-5px); }
+  60% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.profile h3:hover {
+  animation: shake 3s linear;
+  color: #fdfbf1;
+  text-shadow: 0 0 20px #dbdbd8, 0 0 40px #fff;
+}
+@keyframes slideUpFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#description {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 1s ease;
+  box-shadow: 0 4px 24px rgba(47, 37, 21, 0.7); /* Same color as navbar, slightly transparent */
+  border-radius: 12px;
+  background: rgba(47, 37, 21, 0.85); /* Same as navbar, slightly transparent */
+  padding: 16px;
+}
+
+#description.show {
+  opacity: 1;
+  visibility: visible;
+  animation: slideUpFadeIn 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.profile-ring {
+  position: relative;
+  display: inline-block;
+}
+
