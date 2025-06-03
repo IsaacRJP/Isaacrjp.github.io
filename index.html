@@ -3,49 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        body{ font-family: Arial; background: black; color: white }
-        h1, h2, h3{ font-family: Helvetica; }
-        #maindiv{ background: #3e3a3a}
-        /* background and background-color do the same thing */
-        a{
-            font-weight: bold;
-            color:#ff0800
-        }
-    </style>
+    <title>Isaac James</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Sour Gummy', sans-serif !important;
+    }
+</style>
 </head>
 <body>
-    <div id ="maindiv">
-        <h1>This is my first Webpage!</h1>
-        <p>Hello World</p>
-        <a href="#filebrowser">To Class Files</a>
-        <h2>Subheading</h2>
-        <p>More text</p>
+    <div class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
     </div>
-    <div>
-        <h2 id="filebrowser">Class Files</h2>
-        <ul>
-            <li><a href="practices.html">HTML PRACTICES</a></li>
-            <li><a href="text.html">HTML Text</a></li>
-            <li><a href="eggrecipe.html">Egg Recipe</a></li>
-            <li><a href="#">About Page</a></li>
-            <li>
-                <a href="cityfarmer/" target = "_blank">City Farmer</a>
-                <ul>
-                    <li><a href="cityfarmer/index.html">Index</a></li>
-                    <li><a href="cityfarmer/cityfarmer.html">Main Page</a></li>
-                    
-                </ul>
-            </li>
-        </ul>
-        <blockquote>"This is my quote" - Me</blockquote>
-        <a href="https://isaacrjp.github.io">Github Homepage</a>
-        <a href="mailto:test@test.com">Email Me</a>
-        <a href="tel+10001112222">(000) 111 - 2222</a>
-        <br>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Cool Video</a>
+    <div id="content">
+        <div class="profile">
+            <img src="avatar.jpg" alt="Profile Picture" id="profile-pic">
+          <h3 id="myName">Isaac James</h3>
+          <div id="description" style="margin-top:20px;">
+            Web Developer and Student Athlete
+          </div>
+        </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
