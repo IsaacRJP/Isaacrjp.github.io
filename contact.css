@@ -111,6 +111,59 @@ body {
   font-size: 2.2rem;
 }
 
+.contact-container label {
+  font-weight: bold;
+  color: #ffd700;
+  margin-bottom: 6px;
+  text-align: left;
+  display: block;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 14px;
+  font-size: 1rem;
+  background: #2f2515;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(47, 37, 21, 0.3);
+  resize: vertical;
+  transition: background 0.2s, outline 0.2s;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  outline: 2px solid #ffd700;
+  background: #3a2e19;
+}
+
+.contact-container button {
+  background: #ffd700;
+  color: #2f2515;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin: 16px auto 0 auto; /* Top margin, auto left/right centers */
+  display: block;
+  width: 100%;           /* Make the button full width */
+  min-width: 160px;      /* Ensures it's wider on larger screens */
+  max-width: 300px;
+  align-self: center;    /* Center the button in the form */
+}
+
+.contact-container button:hover {
+  background: #fffbe0;
+  color: #2f2515;
+  box-shadow: 0 4px 16px #ffd70088;
+}
+
 @keyframes slideUpFadeIn {
   0% {
     opacity: 0;
